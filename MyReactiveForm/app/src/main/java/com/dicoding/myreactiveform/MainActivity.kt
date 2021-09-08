@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                 !Patterns.EMAIL_ADDRESS.matcher(it).matches()
             }
 
+
         emailStream.subscribe { email ->
             showEmailExistAlert(email)
         }
